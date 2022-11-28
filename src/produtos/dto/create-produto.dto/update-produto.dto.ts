@@ -1,13 +1,8 @@
 import { IsNotEmpty, IsString, IsEnum } from 'class-validator';
-import { CategoriaProduto } from '../utils/CategoriaProduto.enum';
+import { CategoriaProduto } from 'src/produtos/utils/CategoriaProduto.enum';
 
-export class ProdutoDTO {
-  // Os produtos serão representados pelos seguintes atributos:
-  // - nome
-  // - valor: float
-  // - descricao
-  // - disponivel: bool // Padrão é true
-  // - e um enum categoria
+export class UpdateProdutoDto {
+  // readonly id: string;
 
   @IsNotEmpty()
   @IsString()
